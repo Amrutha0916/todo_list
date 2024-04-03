@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-do list</title>
+    <link rel="stylesheet" href="todo.css">
+    <script src="todo.js"></script>
+</head>
+<body onload="time()">
+    <section>
+    <div class="container">
+        <div class="datehour">
+            <div id="date">Date</div>
+            <div id="hour">Hour</div>
+            <div id="clock">
+                <span id="hour"></span>
+                <span id="date"></span>
+            </div>
+            
+        </div>
+        <h1 class="h1">TO-DO LIST</h1>
+        <form action="" id="todo-form">
+            <p class="p">Add your task here</p>
+            <div class="form">
+                <input type="text" id="todo" placeholder="type your task here">
+                <button type="submit">
+                    <i class="fa-thin fa-plus"></i>
+                </button>
+            </div>
+        </form>
+        <form action=" " id="edit-form" class="hide">
+            <p>edit your task here</p>
+            <div class="form">
+                <input type="text" id="edit" placeholder="type your task here">
+                <button type="submit">
+                    <i class="fa-solid fa-check-double"></i>
+                </button>
+            </div>
+            <button type="button" class="cancel">cancel</button>
+        </form>
+        <div class="todo-list" id="todo-list">
+            <div class="todo">
+                <h3 class="p">some default task</h3>
+                <button class="finish"><i class="fa-solid fa-check"></i></button>
+                <button class="edit"><i class="fa-solid fa-pen"></i></button>
+                <button class="remove"><i class="fa-solid fa-xmark"></i></button>
+            </div>
+        </div>
+    </div>
+</section> 
+</body>
+</html>

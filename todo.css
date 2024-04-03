@@ -1,0 +1,167 @@
+ *{ 
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+  }
+  body{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background: radial-gradient(circle,rgb(99, 28, 28),rgba(54,132,223,1)100%);
+  }
+  .form{
+    display: flex;
+  }
+  .form input{
+    flex: 1;
+    outline: auto;
+    box-shadow: none;
+    border:1px solid gray;
+  }
+  .form button{
+    background-color: aqua;
+    border: 0px;
+  }
+  .form button:hover{
+    background-color: rgb(33, 184, 19);
+  }
+  .datehour{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 16px;
+    padding: 1rem 1rem 1.5rem 1rem;
+    color: blue;
+  }
+  #date{
+     flex:1;
+  }
+  .h1{
+    color:yellow;
+  }
+  .p{
+    color:yellow;
+  }
+  button{
+    background-color: orange;
+    color: #102f5e;
+    border: 2px solid #102f5e ;
+    padding: 0.2rem 0.4rem;
+    font-size: 0.8rem;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    transition: .4s;
+    border:1px solid orange;
+  }
+  button:hover{
+    background-color: orangered;
+    color: white;  
+  }
+  button > i{
+    font-weight: bold;
+    pointer-events: none;
+  }
+  input{
+    padding: .4rem .5rem;
+    padding-bottom: 10px;
+  }
+  .hide{
+    display: none;
+  }
+  .p{
+    padding-bottom: 20px;
+    margin-top: 45px;
+  }
+.container{
+    background-color: rgb(204, 190, 190);
+    border-radius: 15px;
+    width: 320px;
+    margin:3rem auto ;
+    padding:  1.5rem 1.5rem 0;
+    backdrop-filter: blur(70px);
+    position: relative;
+    background: transparent;
+
+}
+.container header{
+    padding: 0 1rem 1rem;
+    border-bottom: 1px solid rgb(168, 77, 77);
+}
+ h1{
+    padding-left: 16px;
+    border-left: 5px solid rgb(176, 21, 47);
+   
+}
+#todo-form,
+#edit-form {
+  padding: 1rem; 
+  border-bottom: 1px solid rgb(182, 154, 154);
+}
+#todo-form >p,#edit-form >p{
+  margin-bottom: .5rem;
+
+}
+.edit-form {
+  margin-bottom: .5rem;
+  font-weight: bold;
+}
+.form >input{
+  margin-right: 1rem; 
+}
+.cancel{
+  margin-top: 1rem;
+}
+.todo{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0.3rem 0.2rem;
+  border-bottom: 1px  solid wheat;
+  transition: .3s;
+}
+.todo h3{
+  flex: 1;
+  font-size: 0.9rem;
+}
+.todo button{
+  margin-left: 0.4rem;
+  border-radius: 50%;
+  width:20px;
+  height:20px;
+  box-shadow: 3px 2px #0763ee;
+  border:4px;
+}
+.done{
+  background-color: green;
+}
+.done h3{
+  color: white;
+  text-decoration: line-through;
+  font-style:italic ;
+}
+.todo button:hover,.done button{
+     background: color #395169;;
+     color: #ecf0f1;
+}
+.done >button:hover{
+  background-color: #ecf0f1;
+  color:#102f5e;
+}
+#todo-list{
+  max-height:220px;
+  overflow:auto ;
+}
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: url(goal\ setting.png) no-repeat;
+  background-size: cover;
+  background-position: center;
+  animation: animi 5s linear infinite;
+}
+@keyframes animi {
+  100%{
+      filter:hue-rotate(60deg);
+  }
+}
